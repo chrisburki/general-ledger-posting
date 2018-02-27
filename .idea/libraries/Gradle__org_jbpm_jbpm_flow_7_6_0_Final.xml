@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jbpm:jbpm-flow:7.6.0.Final">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jbpm/jbpm-flow/7.6.0.Final/c378f635000127e5e1ed0319bc412ac1848b4fde/jbpm-flow-7.6.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jbpm/jbpm-flow/7.6.0.Final/50d9999f32c65159d561732071c2b591c0b87733/jbpm-flow-7.6.0.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

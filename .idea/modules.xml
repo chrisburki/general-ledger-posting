@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ledger.posting.iml" filepath="$PROJECT_DIR$/.idea/modules/ledger.posting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ledger.posting_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ledger.posting_main.iml" group="ledger.posting" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ledger.posting_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ledger.posting_test.iml" group="ledger.posting" />
+    </modules>
+  </component>
+</project>

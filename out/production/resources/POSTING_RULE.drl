@@ -1,0 +1,17 @@
+import com.avaloq.ledger.posting.model.PostingMap;
+import com.avaloq.ledger.posting.model.Voucher;
+import java.util.*;
+
+global com.avaloq.ledger.posting.model.PostingMap postingMap;
+dialect  "mvel"
+
+rule "Calculate Ledger Postings - Scenario 1"
+    when
+        voucherInstance:Voucher(subLedgerCategory == "ACCOUTPAYABLE" && amountCategory == "BOOKING" && amount > 0 && currencyIso == "EUR");
+    then
+       	postingMap.setPostingAmount(voucherInstance.getAmountCategory);
+       	postingMap.setPostingAmount(voucherInstance.getAmount);
+       	postingMap.setDebitLedgerAccount('1.1.1');
+       	postingMap.setCreditLedgerAccount('3.15.110');
+       	postingMap.setStatus(200L);
+end

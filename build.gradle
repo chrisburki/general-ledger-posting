@@ -1,0 +1,50 @@
+group 'com.avaloq.ledger.posting'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.10.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'ledger-posting-service'
+    version =  '0.1.0'
+}
+
+ext {
+    droolsVersion = "7.6.0.Final"
+    swaggerVersion = "2.7.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.kie:kie-ci:${droolsVersion}")
+    compile("org.drools:drools-decisiontables:${droolsVersion}")
+    compile("org.drools:drools-core:${droolsVersion}")
+    compile("org.drools:drools-compiler:${droolsVersion}")
+    compile("org.kie:kie-spring:${droolsVersion}")
+    compile("io.springfox:springfox-swagger2:${swaggerVersion}")
+    compile("io.springfox:springfox-swagger-ui:${swaggerVersion}")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+//http://localhost:8080/swagger-ui.html
+
+//https://www.flowable.org/docs/userguide/index.html#getting.started.command.line
+// https://mvnrepository.com/artifact/org.flowable/flowable-engine
