@@ -64,11 +64,12 @@ public class PostingConfig {
    * Input excelFile example: com/baeldung/drools/rules/Discount.xls
    */
 
-    public String getDrlFromExcel(String excelFile) {
-        DecisionTableConfiguration configuration = KnowledgeBuilderFactory.newDecisionTableConfiguration();
+    public String getDrlFromExcel() {
+        String excelFilePath = RULES_PATH + excelFile;
+            DecisionTableConfiguration configuration = KnowledgeBuilderFactory.newDecisionTableConfiguration();
         configuration.setInputType(DecisionTableInputType.XLS);
 
-        Resource dt = ResourceFactory.newClassPathResource(excelFile, getClass());
+        Resource dt = ResourceFactory.newClassPathResource(excelFilePath, getClass());
 
         DecisionTableProviderImpl decisionTableProvider = new DecisionTableProviderImpl();
 

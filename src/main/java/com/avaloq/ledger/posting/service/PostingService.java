@@ -20,7 +20,7 @@ public class PostingService {
         kieSession.insert(voucher);
         kieSession.fireAllRules();
         kieSession.dispose();
-//        System.out.println("!! RIDE FARE !! " + rideFare.getTotalFare());
+//        System.out.println("!! drl !! " + postingConfig.getDrlFromExcel());
         postingMap.setPostingCurrencyIso(voucher.getPostingCurrencyIso());
         postingMap.setDebitLedgerAccount(voucher.getDebitLedgerAccount());
         postingMap.setCreditLedgerAccount(voucher.getCreditLedgerAccount());
