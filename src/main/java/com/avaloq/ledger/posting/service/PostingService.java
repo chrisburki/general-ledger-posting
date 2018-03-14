@@ -1,5 +1,6 @@
 package com.avaloq.ledger.posting.service;
 
+import com.avaloq.ledger.posting.config.PostingConfig;
 import com.avaloq.ledger.posting.model.PostingMap;
 import com.avaloq.ledger.posting.model.Voucher;
 import org.kie.api.runtime.KieContainer;
@@ -11,15 +12,19 @@ import org.springframework.stereotype.Component;
 public class PostingService {
 
     @Autowired
-    private KieContainer kContainer;
+    private PostingConfig postingConfig;
 
     public Long calculatePosting(Voucher voucher, PostingMap postingMap) {
-        KieSession kieSession = kContainer.newKieSession();
-        kieSession.setGlobal("postingMap", postingMap);
+        KieSession kieSession = postingConfig.kieSession();
+//        kieSession.setGlobal("postingMap", postingMap);
         kieSession.insert(voucher);
         kieSession.fireAllRules();
         kieSession.dispose();
 //        System.out.println("!! RIDE FARE !! " + rideFare.getTotalFare());
+        postingMap.setPostingCurrencyIso(voucher.getPostingCurrencyIso());
+        postingMap.setDebitLedgerAccount(voucher.getDebitLedgerAccount());
+        postingMap.setCreditLedgerAccount(voucher.getCreditLedgerAccount());
+        postingMap.setStatus(200L);
         return postingMap.getStatus();
     }
 }

@@ -11,6 +11,12 @@ public class Voucher {
     private String amountCategory;
     private Double amount;
     private Double amountBaseCurrency;
+    // Output
+    private Double postingAmount;
+    private String postingCurrencyIso;
+    private String debitLedgerAccount;
+    private String creditLedgerAccount;
+
 
     public Voucher() {
         amount = 0D;
@@ -73,4 +79,38 @@ public class Voucher {
         this.amountBaseCurrency = amountBaseCurrency;
     }
 
+    // Output
+
+
+    public Double getPostingAmount() {
+        return postingAmount;
+    }
+
+    public void setPostingAmount(Double postingAmount) {
+        this.postingAmount = postingAmount;
+    }
+
+    public String getPostingCurrencyIso() {
+        return postingCurrencyIso;
+    }
+
+    public void setPostingCurrencyIso(String postingCurrencyIso) {
+        this.postingCurrencyIso = postingCurrencyIso;
+    }
+
+    public String getDebitLedgerAccount() {
+        return debitLedgerAccount;
+    }
+
+    public void setDebitLedgerAccount(String debitLedgerAccount) {
+        this.debitLedgerAccount = debitLedgerAccount;
+    }
+
+    public String getCreditLedgerAccount() {
+        return creditLedgerAccount;
+    }
+
+    public void setCreditLedgerAccount(String creditLedgerAccount) {
+        this.creditLedgerAccount = creditLedgerAccount;
+    }
 }
