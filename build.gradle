@@ -1,4 +1,4 @@
-group 'avaloqledger'
+group 'chrisburki'
 
 buildscript {
     repositories {
@@ -22,12 +22,13 @@ jar {
 }
 
 task buildDocker(type: Docker, dependsOn: build) {
+    push = false
     applicationName = jar.baseName
     dockerfile = file('Dockerfile')
     doFirst {
         copy {
-            from jar
-            into "${stageDir}/target"
+            from 'build/libs/ledger-posting.jar'
+            into "build/docker/target"
         }
     }
 }
