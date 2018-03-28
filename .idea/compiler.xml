@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="ledger-posting-rule_main" target="1.8" />
+      <module name="ledger-posting-rule_test" target="1.8" />
       <module name="ledger-posting_main" target="1.8" />
       <module name="ledger-posting_test" target="1.8" />
       <module name="ledger.posting_main" target="1.8" />

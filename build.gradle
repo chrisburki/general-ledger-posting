@@ -27,7 +27,7 @@ task buildDocker(type: Docker, dependsOn: build) {
     dockerfile = file('Dockerfile')
     doFirst {
         copy {
-            from 'build/libs/ledger-posting.jar'
+            from 'build/libs/ledger-posting-rule.jar'
             into "build/docker/target"
         }
     }
