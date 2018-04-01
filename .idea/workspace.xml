@@ -115,8 +115,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -1026,7 +1026,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522577425497</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Expose 8080 V3">
+      <created>1522577672603</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1522577672603</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1134,7 +1141,8 @@
     <MESSAGE value="Add Jar to repository" />
     <MESSAGE value="Expose 8080" />
     <MESSAGE value="Expose 8080 V2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expose 8080 V2" />
+    <MESSAGE value="Expose 8080 V3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expose 8080 V3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1469,8 +1477,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding />
         </state>
       </provider>
