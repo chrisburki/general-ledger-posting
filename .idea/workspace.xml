@@ -116,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="99">
-              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1019,7 +1019,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522576744191</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Expose 8080 V2">
+      <created>1522577425497</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1522577425497</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1126,7 +1133,8 @@
     <MESSAGE value="Dockerfile" />
     <MESSAGE value="Add Jar to repository" />
     <MESSAGE value="Expose 8080" />
-    <option name="LAST_COMMIT_MESSAGE" value="Expose 8080" />
+    <MESSAGE value="Expose 8080 V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expose 8080 V2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1462,7 +1470,7 @@
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
